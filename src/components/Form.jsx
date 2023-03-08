@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <form className='flex flex-col gap-10 border border-gray-300 p-10'>
+    <form className='flex-1 flex flex-col gap-10 border border-gray-300 p-10'>
           <legend className='text-center text-4xl lg:text-left'>
             Contact us
           </legend>

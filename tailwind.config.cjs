@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      gridTemplateColumns: {
+        large: '2fr 1fr',
+      }
     },
   },
   plugins: [],

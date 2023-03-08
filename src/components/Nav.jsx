@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import {RiMenu3Fill} from "react-icons/ri"
+import {RiMenu3Fill} from "react-icons/ri";
+import MobileNav from "./MobileNav";
+import { useState } from "react";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="flex items-center justify-between mb-2 py-3">
+    <nav className="relative flex items-center justify-between mb-2 py-3">
       <Link className="underline font-semibold text-lg" to='/'>
         Business
       </Link>
@@ -29,9 +32,12 @@ const Nav = () => {
       href="mailto:contact@business.com">
         contact us
       </a>
-      <button className="block lg:hidden">
+      <button
+      onClick={() => setIsOpen(!isOpen)} 
+      className="block lg:hidden">
         <RiMenu3Fill size={30} />
       </button>
+      {isOpen && <MobileNav open={isOpen} setOpen={setIsOpen} />}
     </nav>
   )
 }

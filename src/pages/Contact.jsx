@@ -11,13 +11,12 @@ const Contact = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mb-20">
       <HeaderTitle title='Contact Us' />
-      <section className="grid grid-cols-1 gap-20 lg:grid-cols-2 pt-16">
+      <section className="flex items-center flex-col gap-20 lg:flex-row pt-16">
         <Form />
         <Aside />
       </section>
-      <Title subtitle='' title='' />
     </div>
   )
 }

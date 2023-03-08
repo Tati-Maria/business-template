@@ -7,6 +7,8 @@ import Team from './pages/Team';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Layout from './layout/Layout';
+import NotFound from './pages/NotFound';
+import ProjectDetail from "./pages/ProjectDetail";
 
 const router = createBrowserRouter(
   [
@@ -16,11 +18,15 @@ const router = createBrowserRouter(
       children: [
         {
           path: '/',
-          element: <Home />
+          element: <Home />,
         },
         {
           path: 'projects',
-          element: <Work />
+          element: <Work />,
+        },
+        {
+          path: 'projects/:id',
+          element: <ProjectDetail />
         },
         {
           path: 'about',
@@ -37,6 +43,10 @@ const router = createBrowserRouter(
         {
           path: 'contact',
           element: <Contact />
+        },
+        {
+          path: '*',
+          element: <NotFound />
         }
       ]
     }

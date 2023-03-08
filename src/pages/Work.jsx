@@ -6,24 +6,33 @@ import project3 from '../assets/project-placeholder3.svg';
 import HeaderTitle from '../components/common/HeaderTitle';
 import Title from '../components/common/Title';
 
-const projects = [
+export const projects = [
   {
     id: 1,
     title: 'Project #1',
     small: 'Art direction',
-    image: project1
+    image: project1,
+    desc: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.',
+    date: '2020-01-01',
+    who: 'John Doe, Jane Doe',
   },
   {
     id: 2,
     title: 'Project #2',
     small: 'Product Design',
-    image: project2
+    image: project2,
+    desc: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.',
+    date: '2020-03-01',
+    who: 'John Doe, Jane Doe'
   },
   {
     id: 3,
     title: 'Project #3',
     small: 'Animation',
-    image: project3
+    image: project3,
+    desc: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.',
+    date: '2022-09-01',
+    who: 'John Doe, Jane Doe'
   }
 ]
 
